@@ -26,3 +26,4 @@
 *.lib binary
 *.so binary
 *.a binary
+*.dll binary

@@ -1,8 +1,6 @@
 # qfusion-libsrcs
 
-This is the source for the static linked libraries used in Qfusion, with the settings we use for building them.
-
-**NOTE**: if you opt to use MSVC project files, make sure that you compile static libraries with /NODEFAULTLIB (Ignore default libraries), Runtime libraries have to be 'Multithreaded' and 'Multithreaded Debug' for 'Release' and 'Debug' builds respectively. **DO NOT** use 'Multithreaded DLL'!
+This is the source for the statically linked libraries used in Qfusion, with the settings we use for building them.
 
 ## Compiling zlib
 1. open visual studio, locate the project file in zlib\contrib\vstudio\vc[v:9,10]\zlibstat.vc[x]project
@@ -36,9 +34,9 @@ alternatively, to build release configuration, type:
 3. type:
 `nmake /f Makefile.vc9 clean`
 4. to build debug configuration, type:
-`nmake CFG=debug-zlib RTLIBCFG=static /f Makefile.vc9`
+`nmake CFG=debug-zlib /f Makefile.vc9`
 alternatively, to build release configuration, type:
-`nmake CFG=release-zlib RTLIBCFG=static /f Makefile.vc9`
+`nmake CFG=release-zlib /f Makefile.vc9`
 5. locate and copy the libcurl.lib file in either 'debug-zlib' or 'release-zlib' directory
 
 ## Compiling libogg

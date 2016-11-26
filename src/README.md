@@ -32,11 +32,11 @@ alternatively, to build release configuration, type:
 1. open visual studio,  go to the tools menu -> visual studio command prompt
 2. in command prompt change current directory to libcurl/lib
 3. type:
-`nmake /f Makefile.vc9 clean`
+`nmake /f Makefile.vc10 clean`
 4. to build debug configuration, type:
-`nmake CFG=debug-zlib /f Makefile.vc9`
+`nmake CFG=debug-zlib /f Makefile.vc10`
 alternatively, to build release configuration, type:
-`nmake CFG=release-zlib /f Makefile.vc9`
+`nmake CFG=release-zlib /f Makefile.vc10`
 5. locate and copy the libcurl.lib file in either 'debug-zlib' or 'release-zlib' directory
 
 ## Compiling libogg

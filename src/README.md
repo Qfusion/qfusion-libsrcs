@@ -17,17 +17,6 @@ x64:
 `nmake -f win32/Makefile.msc AS=ml64 LOC="-DASMV -DASMINF" OBJA="inffasx64.obj gvmat64.obj inffas8664.c" zlib.lib`
 6. locate and copy the zlib.lib file
 
-## Compiling libjpeg
-1. open visual studio,  go to the tools menu -> visual studio command prompt
-2. in command prompt change current directory to libjpeg
-3. type:
-`nmake /f Makefile.vc clean`
-4. to build debug configuration, type:
-`nmake /f Makefile.vc libjpeg.lib`
-alternatively, to build release configuration, type:
-`nmake nodebug=1 /f Makefile.vc libjpeg.lib`
-5. locate and copy the libjpeg.lib file
-
 ## Compiling libcurl
 1. open visual studio,  go to the tools menu -> visual studio command prompt
 2. in command prompt change current directory to libcurl/lib
@@ -38,14 +27,6 @@ alternatively, to build release configuration, type:
 alternatively, to build release configuration, type:
 `nmake CFG=release-zlib /f Makefile.vc10`
 5. locate and copy the libcurl.lib file in either 'debug-zlib' or 'release-zlib' directory
-
-## Compiling libogg
-libogg/win32/VS2008/libogg_static.vcproj
-
-## Compiling libvorbis
-libvorbis/win32/VS2008/libvorbis/libvorbis_static.vcproj
-
-libvorbis/win32/VS2008/libvorbisfile/libvorbisfile_static.vcproj
 
 ## Notes on OpenSSL
 Some libcrypto assembly files were pre-converted to make OpenSSL buildable without Perl.
